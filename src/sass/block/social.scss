@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    color: $color-black;
+    margin-left: 13px;
+    transition: 0.15s ease-out;
+  }
+
+  path {
+    transition: 0.15s ease-out;
+  }
+
+  &:hover {
+    path {
+      stroke: $color-blue;
+    }
+
+    .social__text {
+      color: $color-blue;
+      margin-left: 10px;
+    }
+  }
+}

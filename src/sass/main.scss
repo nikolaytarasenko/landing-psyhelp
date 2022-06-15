@@ -1,13 +1,14 @@
+/* Libs */
+@import "utils/libs.scss";
+
+/* Utils */
+@import 'utils/fonts.scss';
 @import 'utils/vars.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* General */
+@import 'block/general.scss';
 
-html {
-    font-size: $base-font-size;
-}
-
-@import 'block/title.scss';
+/* Blocks */
+@import "block/logo.scss";
+@import "block/social.scss";
+@import 'block/header.scss';
