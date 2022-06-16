@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 70px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 20px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(91.29deg, rgba(182, 223, 255, 0.6) -21.23%, rgba(182, 223, 255, 0.1) 101.92%);
+  }
+
+  &__column {
+    flex: 1;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__lang {
+    text-align: right;
+  }
+}

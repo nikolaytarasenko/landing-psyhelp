@@ -1,1 +1,12 @@
-footer Footer pug
+footer.footer
+    .container
+        .footer__inner
+            .footer__column
+                a.logo(href="/")
+                    img.footer__logo-img(src="./img/logo.svg" alt="logo")
+            .footer__column
+                .footer__info
+                    p.footer__text design by #[span.text-blue @aleks.ux]
+                    p.footer__text developed by #[span.text-blue @link]
+            .footer__column
+                .footer__lang Мова | #[b UA]
