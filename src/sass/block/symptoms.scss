@@ -1,0 +1,54 @@
+.symptoms {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__item-img {
+    min-height: 100px;
+    margin-bottom: 18px;
+  }
+
+  &__item-text {
+    max-width: 190px;
+  }
+
+  &__request-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__request {
+    margin-left: 0;
+    position: relative;
+    z-index: unset;
+    backdrop-filter: unset;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 542px;
+      height: 316px;
+      left: 30%;
+      bottom: 40px;
+      transform: translateX(-50%);
+      background: #93CFFF;;
+      filter: blur(150px);
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    max-width: 530px;
+    font-size: 1.5rem;
+    margin-left: 95px;
+  }
+}
