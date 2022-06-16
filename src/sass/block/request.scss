@@ -1,0 +1,32 @@
+.request {
+  position: relative;
+  max-width: 344px;
+  padding: 30px;
+  background: linear-gradient(151.9deg, rgba(255, 255, 255, 0.4) -53.37%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.2) 100%);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  z-index: 1;
+
+  &_align_left {
+    margin-left: auto;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: -35px;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border: 0 solid transparent;
+      border-bottom-width: 30px;
+      border-top-width: 30px;
+      border-left: 35px solid rgba(255,255,255,.4);
+      z-index: -1;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+  }
+}
