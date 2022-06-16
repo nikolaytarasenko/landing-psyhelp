@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -48,6 +48,10 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.section {
+  padding: 50px 0;
 }
 
 .title {
