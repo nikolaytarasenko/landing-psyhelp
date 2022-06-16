@@ -1,0 +1,37 @@
+.contacts {
+  &__row {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1200px;
+      height: 600px;
+      left: 50%;
+      bottom: 50px;
+      transform: translateX(-50%);
+      background: #93CFFF;
+      filter: blur(100px);
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__request {
+    margin-bottom: 60px;
+  }
+
+  &__feedback {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
