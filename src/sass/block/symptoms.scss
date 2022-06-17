@@ -8,6 +8,17 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(auto, 250px));
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__item-img {
@@ -17,12 +28,20 @@
 
   &__item-text {
     max-width: 190px;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
   }
 
   &__request-container {
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__request {
@@ -50,5 +69,15 @@
     max-width: 530px;
     font-size: 1.5rem;
     margin-left: 95px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    @media (max-width: 476px) {
+      font-size: 1.1rem;
+    }
   }
 }

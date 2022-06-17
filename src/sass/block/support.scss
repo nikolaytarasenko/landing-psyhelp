@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__content {
@@ -30,10 +34,18 @@
 
   &__text {
     max-width: 450px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   &__img-wrapper {
     position: relative;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
 
     &::after {
       position: absolute;

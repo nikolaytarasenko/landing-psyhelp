@@ -8,10 +8,21 @@
     padding: 65px 20px;
     border-radius: 10px 10px 0 0;
     background: linear-gradient(91.29deg, rgba(182, 223, 255, 0.6) -21.23%, rgba(182, 223, 255, 0.1) 101.92%);
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+      padding: 30px 0;
+    }
   }
 
   &__column {
     flex: 1;
+
+    @media (max-width: 375px) {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &__info {

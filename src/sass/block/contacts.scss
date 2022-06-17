@@ -1,8 +1,18 @@
 .contacts {
+  @media (max-width: 768px) {
+    margin-top: 30px;
+  }
+
   &__row {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+
+    @media (max-width: 991.98px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 30px;
+    }
 
     &::after {
       position: absolute;
@@ -18,12 +28,25 @@
     }
   }
 
+  &__col {
+    &:nth-child(3) {
+      @media (max-width: 991.98px) {
+        grid-column: 1 / 3;
+        text-align: center;
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 60px;
   }
 
   &__request {
     margin-bottom: 60px;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 
   &__feedback {
@@ -33,5 +56,11 @@
 
   &__text {
     margin-bottom: 20px;
+  }
+
+  &__social {
+    @media (max-width: 991.98px) {
+      justify-content: center;
+    }
   }
 }
