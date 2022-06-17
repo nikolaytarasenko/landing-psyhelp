@@ -1,3 +1,7 @@
-const sum = require('./module/sum.js');
-console.log(sum(2, 10));
-console.log(sum(12, 5));
+const hidePreloader = () => {
+    const preloaderWrapper = document.querySelector('.preloader-wrapper');
+
+    preloaderWrapper.classList.add('hide');
+}
+
+window.addEventListener('load', hidePreloader);

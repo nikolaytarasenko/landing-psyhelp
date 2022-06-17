@@ -101,3 +101,8 @@ img {
 .text-blue {
   color: $color-blue;
 }
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
