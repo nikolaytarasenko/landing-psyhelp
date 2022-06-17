@@ -1,0 +1,1 @@
+window.addEventListener("load",(()=>{document.querySelector(".preloader-wrapper").classList.add("hide")}));
